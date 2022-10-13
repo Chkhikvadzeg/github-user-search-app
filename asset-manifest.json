@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github-user-search-app/static/css/main.3494d40c.css",
+    "main.js": "/github-user-search-app/static/js/main.49f71c97.js",
+    "static/media/icon-sun.svg": "/github-user-search-app/static/media/icon-sun.f28a8996f9959c40bdff14d5a43c08d8.svg",
+    "index.html": "/github-user-search-app/index.html",
+    "static/media/icon-moon.svg": "/github-user-search-app/static/media/icon-moon.cce754cec46d095fd3ce12737f38694b.svg",
+    "main.3494d40c.css.map": "/github-user-search-app/static/css/main.3494d40c.css.map",
+    "main.49f71c97.js.map": "/github-user-search-app/static/js/main.49f71c97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3494d40c.css",
+    "static/js/main.49f71c97.js"
+  ]
+}
