@@ -8,15 +8,10 @@ export default function SearchResult({ search, isBlack, setIsNoResult, setIsLoad
     const fetchData = async () => {
       try {
         setIsLoading(true)
-        const { data } = await axios?.get(`https://api.github.com/users/${search}`, {
-          headers: {
-            Authorization: `token ${process.env.REACT_APP_API_KEY}`,
-          }
-        })
+        const { data } = await axios?.get(`https://api.github.com/users/${search}`)
         setIsLoading(false)
         setSearchResult(data)
         setIsNoResult(false)
-        console.log(data)
       } catch {
         setIsLoading(false)
         setIsNoResult(true)
