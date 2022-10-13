@@ -4,10 +4,14 @@ import sun from '../assets/icon-sun.svg'
 import moon from '../assets/icon-moon.svg'
 
 export default function Header({ isBlack, setIsBlack }) {
+  const clickHandler = () => {
+    localStorage.setItem('isBlack', !isBlack)
+    setIsBlack(prev => !prev)
+  }
   return (
     <Container>
       <Heading isBlack={isBlack}>devfinder</Heading>
-      <Toggle onClick={() => setIsBlack(prev => !prev)}>
+      <Toggle onClick={clickHandler}>
         <ToggleLabel isBlack={isBlack}>{isBlack ? 'Light' : 'Dark'}</ToggleLabel>
         <img src={isBlack ? sun : moon} alt={isBlack ? 'Sun' : 'Moon'} />
       </Toggle>
